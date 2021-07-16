@@ -1,8 +1,10 @@
-import Movies from './Components/Movies'
+import React from 'react';
+import Movier from './Components/Movier';
+import "./App.css";
 
 function App() {
-  return (
-      <Movies />    
+  return(
+    <Movier />
   );
 }
 

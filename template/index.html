@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
-	<title>Movier</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Movier</title>
 </head>
+
 <body>
-	<header class="header">
-		<nav class="nav">
-			<h2 class="nav__title">Movier</h2>
-			<form class="search-form">
-				<input type="search" class="search-input">
-			</form>
-			<ul class="menu">
-				<li class="menu__item menu__item--active"><a href="" class="menu__link">item 1</a></li>
-				<li class="menu__item"><a href="" class="menu__link">item 2</a></li>
-				<li class="menu__item"><a href="" class="menu__link">item 3</a></li>
-				<li class="menu__item button-container">
-					<button class="menu__button">
-						<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM8 11H20V13H8zM13 16H20V18H13z"/></svg>
-					</button>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<h1 class="title">Welcome to movier!</h1>
-	<p class="subtitle">Your app for check your movies</p>
-	<main class="main movies-grid">
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/a/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Lorem ipsum dolor sit amet.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/b/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Delectus adipisci modi fuga. Sit.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/c/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Harum molestiae porro officiis tempore.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/d/200/300" alt="" class="movie__image">
-			<p class="movie__desc">In, repudiandae ipsum quasi hic.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/e/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Excepturi, eligendi porro dignissimos sint?</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/f/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Dolores distinctio eveniet incidunt quasi.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/g/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Pariatur saepe ab neque nisi.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/h/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Id nam culpa laborum, fugiat.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/i/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Et autem dolore mollitia blanditiis.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/j/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Vero nostrum magnam esse doloribus!</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/k/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Modi, magnam ex repudiandae illo.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/l/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Maxime, porro? Aperiam, deserunt, iste.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/m/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Modi deserunt eligendi sapiente voluptatum.</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/n/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Error aut labore laboriosam natus!</p>
-		</figure>
-		<figure class="movie">
-			<img src="https://picsum.photos/seed/o/200/300" alt="" class="movie__image">
-			<p class="movie__desc">Consequuntur, ipsum et vitae velit.</p>
-		</figure>
-	</main>
+  <header class="header">
+    <nav class="nav">
+      <h2 class="nav__title">Movier</h2>
+      <form class="search-form">
+        <div class="search-container">
+          <input type="search" class="search-input" placeholder="Search...  hit enter" name="movieSearch">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" /></svg>
+        </div>
+      </form>
+      <ul class="menu">
+        <li class="menu__item menu__item--active"><a href="" class="menu__link">item 1</a></li>
+        <li class="menu__item"><a href="" class="menu__link">item 2</a></li>
+        <li class="menu__item"><a href="" class="menu__link">item 3</a></li>
+      </ul>
+      <button class="menu__button">
+        <svg class="icon icon__menu icon__menu--active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM8 11H20V13H8zM13 16H20V18H13z" /></svg>
+        <svg class="icon icon__menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" /></svg>
+      </button>
+    </nav>
+  </header>
+  <h1 class="title">Welcome to movier!</h1>
+  <p class="subtitle">Your app for check your movies</p>
+  <main class="main movies-grid">
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/a/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Lorem ipsum dolor sit amet.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/b/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Delectus adipisci modi fuga. Sit.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/c/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Harum molestiae porro officiis tempore.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/d/200/300" alt="" class="movie__image">
+      <p class="movie__desc">In, repudiandae ipsum quasi hic.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/e/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Excepturi, eligendi porro dignissimos sint?</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/f/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Dolores distinctio eveniet incidunt quasi.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/g/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Pariatur saepe ab neque nisi.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/h/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Id nam culpa laborum, fugiat.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/i/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Et autem dolore mollitia blanditiis.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/j/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Vero nostrum magnam esse doloribus!</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/k/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Modi, magnam ex repudiandae illo.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/l/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Maxime, porro? Aperiam, deserunt, iste.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/m/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Modi deserunt eligendi sapiente voluptatum.</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/n/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Error aut labore laboriosam natus!</p>
+    </figure>
+    <figure class="movie">
+      <img loading="lazy" src="https://picsum.photos/seed/o/200/300" alt="" class="movie__image">
+      <p class="movie__desc">Consequuntur, ipsum et vitae velit.</p>
+    </figure>
+  </main>
+  <script src="main.js"></script>
 </body>
+
 </html>

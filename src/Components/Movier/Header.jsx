@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function MovierHeader(){
+export default function Header(){
 	return(
 	<header className="header">
     <nav className="nav">

@@ -1,12 +1,12 @@
-import MovierHeader from './MovierHeader';
-import MovierGrid from './MovierGrid';
+import Header from './Header';
+import MovieList from './MovieList';
 import Data from '../../Data/movies.json';
 
 export default function Movies(){
 	return(
 		<>
-			<MovierHeader />
-			<MovierGrid movies={Data.results}/>
+			<Header />
+			<MovieList movies={Data.results}/>
 		</>
 	);
 }
